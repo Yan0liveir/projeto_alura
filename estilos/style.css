@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root{
+    --titulo:'Krona One', sans-serif;
+    --texto:'Montserrat', sans-serif;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    box-sizing: border-box;
+    background-color: black;
+    color: #f6f6f6;
+    font-family: var(--texto);
+}
+header{
+    font-family: var(--texto);
+    font-weight: 600; 
+    padding: 21px 25px 1px 165px;
+}
+nav{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link{
+    color: #22D4FD; 
+    text-decoration: none;
+} 
+.titulo-destaque{
+    color:#22D4FD;
+    font-family: var(--titulo);
+    font-weight:400;
+}
+#apresentacao{
+    padding: 47px 212px 100px 171px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 82px;
+}
+#apresentacao__conteudo{
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    /*espaçamento entre os elementos filhos*/
+    gap: 20px;
+}
+#apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--titulo);
+    font-weight:400;
+}
+#apresentacao__conteudo__texto{
+    font-size:1.12rem;
+}
+#apresentacao__links{
+    /*Espaçamento entre as os links*/
+    justify-content: space-between;
+    
+    /*O space between só funciona se estivermos usando o fex:box;*/
+    display: flex;
+    
+    padding: 1px;
+    flex-direction: column;
+    
+    /*Alinha esse id ao centro*/
+    align-items: center;
+    
+    /*Espaçamento estre os itens do id*/
+    gap: 16px;
+}
+.apresentacao__links__subtitulos{
+    font-family: var(--titulo);
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.apresentacao__links__botao{
+    border:2px solid #22D4FD;
+    /*Mexendo com o flex-box*/
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    
+    width: 50%;
+    text-align: center;
+    border-radius:8px ;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    padding: 21.5px;
+    font-family: var(--texto);
+    font-weight: bolder;
+    margin: 0px;
+}
+.apresentacao__links__botao:hover{
+    background-color:#272727 ;
+}
+#img_princ{
+    width: 45%;
+    height: 26%;
+}
+footer{
+    background-color: #22D4FD;
+    color: black;
+    text-align: center;
+    font-family: var(--texto);
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 24px;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding-left: 36%;
+    }
+    #apresentacao{ 
+       flex-direction: column-reverse;
+       padding: 9%;
+    }
+    #apresentacao__conteudo{
+        width: 100%;
+    }
+
+    .apresentacao__links__botao{
+        width: 36vw;
+        height: 3vh;
+    }
+    #img_princ{
+        width:76% ;
+        
+    }
+    #logo{
+       width: 3vw;
+       height: 3vh;
+    }
+    img{
+        width:50%;
+        height: 50%;
+       
+    }
+    
+}
